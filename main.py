@@ -14,9 +14,9 @@ load_dotenv()
 
 logger = logging.getLogger(__name__)
 
-BACKEND_SERVER = os.getenv("SERVER_URL")
-app = FastAPI(servers=[{BACKEND_SERVER}])
-#app = FastAPI(servers=[{"url": "https://e61c-191-99-36-37.ngrok-free.app"}])
+#BACKEND_SERVER = os.getenv("SERVER_URL")
+#app = FastAPI(servers=[{BACKEND_SERVER}])
+app = FastAPI(servers=[{"url": "https://ventascobranzasia.azurewebsites.net/"}])
 #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
 #openai.api_key = os.getenv("org-VJijtoSdzVhF4S9RZkgE00lh")
 openai.api_key = "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" 
